@@ -117,7 +117,7 @@ pip install selenium
   - **O que foi feito no app:** "Novo aplicativo", "Correção do mapping", "Correção do campo X", etc.
 >**Observação** Copiar e colar, com ctrl + shift + v para que cole sem formatação.
 
-
+a
 ### 8. O Que Colocar na Pasta de Operações
 
 - **Quando é migrador-docker:** Incluir todos os arquivos de configuração do Docker e scripts necessários para executar a migração.
