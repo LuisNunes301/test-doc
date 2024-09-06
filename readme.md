@@ -1,36 +1,36 @@
 # Documentação Engenharia de Dados
 ## Índice
 
-1. [Introdução](#introdução)
-2. [Objetivos](#objetivos)
-3. [Programas, Frameworks e Bibliotecas Necessários](#programas-frameworks-e-bibliotecas-necessários)
-   - [Ferramentas Requeridas na Máquina](#ferramentas-requeridas-na-máquina)
-     - [Visual Studio Code](#visual-studio-code)
-     - [Python](#python)
-     - [Java e JDK](#java-e-jdk)
-     - [Eclipse](#eclipse)
-     - [Postman e Elastic](#postman-e-elastic)
-     - [Git](#git)
-4. [Comandos Necessários para Sobreviver](#comandos-necessários-para-sobreviver)
-5. [Como Cortar Arquivos Rápido sem Modificar](#como-cortar-arquivos-rápido-sem-modificar)
-6. [Qual Migrador Usar?](#qual-migrador-usar)
-7. [Anotações no XTR Update](#anotações-no-xtr-update-ed-cura-op)
-8. [O Que Colocar na Pasta de Operações](#o-que-colocar-na-pasta-de-operações)
-9. [Envio Para o Diretório do Atualizador Padrão](#envio-para-o-diretório-do-atualizador-padrão)
-10. [README](#readme)
+1. [Introdução](#1-introdução)
+2. [Objetivos](#2-objetivos)
+3. [Programas, Frameworks e Bibliotecas Necessários](#3-programas-frameworks-e-bibliotecas-necessários)
+   - [Ferramentas Requeridas na Máquina](#31-ferramentas-requeridas-na-máquina)
+     - [Visual Studio Code](#311-visual-studio-code)
+     - [Python](#312-python)
+     - [Java e JDK](#313-java-e-jdk)
+     - [Eclipse](#314-eclipse)
+     - [Postman e Elastic](#315-postman-e-elastic)
+     - [Git](#316-git)
+4. [Comandos Necessários para Sobreviver](#4-comandos-necessários-para-sobreviver)
+5. [Como Cortar Arquivos Rápido sem Modificar](#5-como-cortar-arquivos-rápido-sem-modificar)
+6. [Qual Migrador Usar?](#6-qual-migrador-usar)
+7. [Anotações no XTR Update (ED - CURA - OP)](#7-anotações-no-xtr-update-ed---cura---op)
+8. [O Que Colocar na Pasta de Operações](#8-o-que-colocar-na-pasta-de-operações)
+9. [Envio Para o Diretório do Atualizador Padrão](#9-envio-para-o-diretório-do-atualizador-padrão)
+10. [README](#10-readme)
 
 
 ## 1. Introdução
 
-## 2. Objetivo
+## 2. Objetivos
 Fornecer um guia (quase)completo para configuração de ambiente, instalação de ferramentas e bibliotecas, além de instruções necessárias para a execução de tarefas de engenharia de dados, como manipulação de arquivos e utilização de migradores de dados.
 
 
 ## 3. Programas, Frameworks e Bibliotecas Necessários
 
-### 3.1.Ferramentas Requeridas na Máquina
+### 3.1. Ferramentas Requeridas na Máquina
 
-#### 3.1 Visual Studio Code
+##### 3.1.1 Visual Studio Code
 - **Extensões Necessárias:**
   - [Spring Boot Extension Pack](https://marketplace.visualstudio.com/items?itemName=Pivotal.vscode-spring-boot)
   - [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
@@ -40,7 +40,7 @@ Fornecer um guia (quase)completo para configuração de ambiente, instalação d
   - [Excel Viewer](https://marketplace.visualstudio.com/items?itemName=GrapeCity.gc-excelviewer)
 
 > **Observação:** Configurações visuais e pessoais do Visual Studio Code podem ser ajustadas de acordo com a preferência de cada pessoa.
-#### 3.2 Python
+##### 3.1.2 Python
 - Instalar a última versão da linguagem de programação.
 - **Recomendação:** Caso já tenha o Python instalado, execute:
 ```bash
@@ -58,18 +58,20 @@ pip install ipykernel
 pip install lxml
 pip install selenium
 ```
-#### 3.3 Java e JDK
+##### 3.1.3 Java e JDK
 - **Requisitos:**
     - [Java 8](https://www.java.com/pt-BR/download/ie_manual.jsp?locale=pt_BR)
     - [JDK Development Kit 17.0](https://download.oracle.com/java/17/archive/jdk-17.0.11_windows-x64_bin.msi)
 
-#### 3.4 Eclipse
-  -  Instalar a última versão do aplicativo: [Eclipse ide](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2024-06/R/eclipse-inst-jre-win64.exe)
-  -  Adicionar o plugin no marketplace: [JSON Editor Plugin](https://marketplace.eclipse.org/).
-#### 3.5 Postman e Elastic
+##### 3.1.4 Eclipse
+  -  Instalar a última versão do aplicativo: 
+      - [Eclipse ide](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2024-06/R/eclipse-inst-jre-win64.exe)
+  -  Adicionar o plugin no marketplace: 
+      - [JSON Editor Plugin](https://marketplace.eclipse.org/).
+##### 3.1.5 Postman e Elastic
 - Configurar o Postman para testes de API.
 
-#### 3.6 Git
+##### 3.1.6 Git
 - **Comandos Úteis:**
 ```bash
   git status # Verificar o status do repositório
@@ -91,8 +93,12 @@ pip install selenium
  ```bash
     sed -n '1p; <inicio>,<fim>p' arquivo_original > arquivo_novo.csv
     awk 'NR>=10 && NR<=1000' x.csv > y.csv
-```
-### 6. Como Cortar Arquivos Rápido sem Modificar
+  
+```  
+  - O comando usado `awk` para selecionar as linhas de 10 a 1000 do arquivo x.csv e salva essas linhas no arquivo y.csv.
+  - O comando `sed` -n '1p; <inicio>,<fim>p' arquivo_original > arquivo_novo.csv copia a primeira linha e o intervalo de linhas entre <inicio> e <fim> do arquivo arquivo_original para arquivo_novo.csv.
+  Este comando é útil para manter o cabeçalho de um arquivo CSV ao selecionar um subconjunto de linhas.
+### 6. Qual Migrador Usar?
 - **Migrador-Docker:** Utilizado para arquivos `xlsx`.
 - **Migrador-CSV:** Utilizado para arquivos `csv`.
 - **Migrador-JSON:** Utilizado para arquivos `json`.
@@ -109,6 +115,7 @@ pip install selenium
   - **Instrução de trabalho usada:** ED-000
   - **Necessário reoperar a carga:** SIM ou NÃO
   - **O que foi feito no app:** "Novo aplicativo", "Correção do mapping", "Correção do campo X", etc.
+>**Observação** Copiar e colar, com ctrl + shift + v para que cole sem formatação.
 
 
 ### 8. O Que Colocar na Pasta de Operações
@@ -118,7 +125,7 @@ pip install selenium
 - **Quando é JSON:** Incluir arquivos `.json` originais, scripts de validação e transformação de dados.
 - **Migrador API:** Colocar scripts de integração, configurações de conexão e documentação da API utilizada.
 
-## 9. Envio Para o Diretório do Atualizador Padrão
+## 9. Envio Para o Diretório da Operação
 
 Após a realização das etapas acima, acesse o terminal Git e, na raiz do projeto, versione sua contribuição. Utilize o fluxo de comandos Git mais frequente para essa finalidade:
 
