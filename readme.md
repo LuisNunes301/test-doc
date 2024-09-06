@@ -112,60 +112,6 @@ Após a realização das etapas acima, acesse seu terminal git e, na raiz do pro
 5. [Responsabilidades](#responsabilidades)
 6. [Controle de Versão](#controle-de-versão)
 
-## Introdução
-
-Este documento tem como objetivo descrever os processos de Engenharia de Dados utilizados pela empresa, garantindo a qualidade e a segurança dos dados coletados e processados.
-
-## Objetivos
-
-* Definir os processos de Engenharia de Dados a serem seguidos pela equipe;
-* Garantir a qualidade e a segurança dos dados coletados e processados;
-* Fornecer diretrizes para a coleta, processamento, armazenamento, análise e visualização de dados.
-
-## Escopo
-
-Este documento se aplica a todos os colaboradores da empresa que trabalham com Engenharia de Dados.
-
-## Processos de Engenharia de Dados
-
-### Coleta de Dados
-
-* Definição dos requisitos de coleta de dados;
-* Seleção das fontes de dados;
-* Coleta de dados utilizando ferramentas e técnicas adequadas.
-
-### Processamento de Dados
-
-* Limpeza e transformação de dados;
-* Validação e verificação de dados;
-* Processamento de dados utilizando ferramentas e técnicas adequadas.
-
-### Armazenamento de Dados
-
-* Definição da estrutura de armazenamento de dados;
-* Seleção da tecnologia de armazenamento de dados;
-* Armazenamento de dados de forma segura e eficiente.
-
-### Análise de Dados
-
-* Definição dos objetivos de análise de dados;
-* Seleção das técnicas e ferramentas de análise de dados;
-* Análise de dados para extrair insights e conhecimentos.
-
-### Visualização de Dados
-
-* Definição dos objetivos de visualização de dados;
-* Seleção das ferramentas e técnicas de visualização de dados;
-* Visualização de dados para comunicar insights e conhecimentos.
-
-## Responsabilidades
-
-* O gerente de Engenharia de Dados é responsável por garantir a implementação e manutenção dos processos de Engenharia de Dados;
-* Os colaboradores de Engenharia de Dados são responsáveis por seguir os processos de Engenharia de Dados definidos.
-
-## Controle de Versão
-
-Este documento será revisado e atualizado anualmente, ou sempre que necessário.
 
 ## README
 
