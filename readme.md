@@ -1,3 +1,4 @@
+![enter image description here](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)![enter image description here](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)![enter image description here](https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white)
 # Documentação Engenharia de Dados
 ## Índice
 
@@ -91,12 +92,13 @@ pip install selenium
 ##### 3.1.5 Postman e Elastic
 - [Postman](https://dl.pstmn.io/download/latest/win64)
 - Configurar o Postman para testes de API.
-- Sandbox:http://sandbox.consiste.com.br:5601/app/dev_tools#/console
+- Sandbox: http://sandbox.consiste.com.br:5601/app/dev_tools#/console
 >**Observação:** Precisa estar com a VPN ligada para acessar.
 
 ##### 3.1.6 Git
   - Instalar [git](https://git-scm.com/download/win)
 
+falta notepad++,emditor
 ### 4. Comandos Necessários para Sobreviver.
 ```bash
 - `cd` - Mudar de diretório
