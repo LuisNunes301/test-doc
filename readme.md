@@ -29,17 +29,17 @@ Aqui, você encontrará informações sobre como **configurar o ambiente**, **in
 
 Este guia é dividido em seções, cada uma abordando um tópico específico, desde a **introdução** até a **configuração de ferramentas** e procedimentos para a **execução de tarefas**.
 
-Índice: fornece uma visão geral do conteúdo do guia.
-**Introdução**: apresenta o objetivo e o escopo do guia.
-**Objetivos**: descreve os objetivos do guia.
-**Programas, Frameworks e Bibliotecas Necessários**: lista as ferramentas e bibliotecas necessárias para a execução de tarefas de engenharia de dados.
-**Comandos Necessários para Sobreviver**: fornece comandos úteis para a execução de tarefas de engenharia de dados.
-**Como Cortar Arquivos Rápido sem Modificar**: fornece instruções para cortar arquivos rapidamente sem modificar.
-**Qual Migrador Usar?**: descreve os diferentes tipos de migradores e quando usá-los.
-**Anotações no XTR Update**: fornece instruções para anotar no XTR Update.
-**O Que Colocar na Pasta de Operações**: descreve o que colocar na pasta de operações.
-**Comandos necessarios para upar um repositório para o GitLab**: fornece comandos necessários para upar um repositório para o GitLab.
-**README**: fornece informações sobre como contribuir com o guia.
+- Índice: fornece uma visão geral do conteúdo do guia.
+- **Introdução**: apresenta o objetivo e o escopo do guia.
+- **Objetivos**: descreve os objetivos do guia.
+- **Programas, Frameworks e Bibliotecas Necessários**: lista as ferramentas e bibliotecas necessárias para a execução de tarefas de engenharia de dados.
+- **Comandos Necessários para Sobreviver**: fornece comandos úteis para a execução de tarefas de engenharia de dados.
+- **Como Cortar Arquivos Rápido sem Modificar**: fornece instruções para cortar arquivos rapidamente sem modificar.
+- **Qual Migrador Usar?**: descreve os diferentes tipos de migradores e quando usá-los.
+- **Anotações no XTR Update**: fornece instruções para anotar no XTR Update.
+- **O Que Colocar na Pasta de Operações**: descreve o que colocar na pasta de operações.
+- **Comandos necessarios para upar um repositório para o GitLab**: fornece comandos necessários para upar um repositório para o GitLab.
+- **README**: fornece informações sobre como contribuir com o guia.
 
 Esperamos que este guia seja útil para você! Se tiver alguma dúvida ou precisar de mais ajuda, sinta-se à vontade para perguntar.
 ## 2. Objetivos.
