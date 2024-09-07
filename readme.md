@@ -17,7 +17,7 @@
 7. [Anotações no XTR Update.](#7-anotações-no-xtr-update)
 8. [O Que Colocar na Pasta de Operações.](#8-o-que-colocar-na-pasta-de-operações)
 9. [Comandos necessarios para upar um repositorio para o gitlab.](#9-comandos-necessarios-para-upar-um-repositorio-para-o-gitlab)
-10. [Confiamos em nós.](#10-confiamos-em-nós)
+10. [Confie em nós.](#10-confie-em-nós)
 
 
 ## 1. Introdução.
