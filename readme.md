@@ -1,4 +1,4 @@
-![enter image description here](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)![enter image description here](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)![enter image description here](https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white)
+![enter image description here](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)![enter image description here](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)![enter image description here](https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white)![enter image description here](https://img.shields.io/badge/Elastic_Search-005571?style=for-the-badge&logo=elasticsearch&logoColor=whit)![enter image description here](https://img.shields.io/badge/GitLab-330F63?style=for-the-badge&logo=gitlab&logoColor=white)
 # Documentação Engenharia de Dados
 ## Índice
 
