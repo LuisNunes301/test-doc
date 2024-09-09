@@ -144,18 +144,18 @@ falta notepad++,emditor
 ### 8. O Que Colocar na Pasta de Operações.
 **Verificar e não subir os `logs` e arquivos que estão no `/dataNormalizadorAssets`**
 - **Quando é migrador-docker:** Incluir todos os arquivos na pasta da operacão, seguindo o seguinte modelo.
-![docker](/assets/docker.png){: width="640" height="400"}
+![docker](/assets/docker.png)
 
 - **Quando é Migrador-CSV:** Incluir todos os arquivos na pasta da operacão, seguindo o seguinte modelo.
-![csv](/assets/csv.png){: width="640" height="400"}
+![csv](/assets/csv.png)
 
 >**Se atentar para quando o arquivo a ser executado tiver mais de 1M docs, a entidade deve seguir o seguinte modelo na pasta da operações.**
-![csv-ingestor](/assets/csv-ingestor.png){: width="640" height="400"}
+![csv-ingestor](/assets/csv-ingestor.png)
 - **Quando é JSON:** Incluir todos os arquivos na pasta da operacão, seguindo o seguinte modelo, há de reparar que é bem semelhante ao **Migrador-CSV**.
-![json](/assets/json.png){: width="640" height="400"}
+![json](/assets/json.png)
 
 - **Migrador API:** Incluir todos os arquivos na pasta da operacão, seguindo o seguinte modelo, há de reparar que é bem semelhante ao **Migrador-CSV**.
-![api](/assets/api.png){: width="640" height="400"}
+![api](/assets/api.png)
 
 ## 9. Rotina de versionamento de codigo.
 
