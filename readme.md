@@ -180,7 +180,7 @@ pip install selenium
 ## 10. Codigos para a verifição da migração dos dados.
 
 **Uma breve rotina de codigo utilizado no elastic search.**
-```json 
+```http
 GET e434_c5/_mapping
 // Obter Estrutura do Índice (_mapping): Útil para verificar se os dados estão sendo armazenados corretamente de acordo com a estrutura esperada.
 
