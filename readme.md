@@ -178,18 +178,24 @@ pip install selenium
 ```
 
 ## 10. Codigos para a verifição da migração dos dados.
-
 **Uma breve rotina de codigo utilizado no elastic search.**
-```plaintext
+##### Comandos Básicos
+
+```bash
 GET e434_c5/_mapping
-// Obter Estrutura do Índice (_mapping): Útil para verificar se os dados estão sendo armazenados corretamente de acordo com a estrutura esperada.
 
-GET e434_c5/_count
-// Contar Documentos (_count): Serve para monitoramento e análise rápida do volume de dados.
-
+```
+>Nota: Este comando obtém a estrutura do índice (_mapping).
+```bash
+e434_c5/_count
+``` 
+>Nota: Este comando conta o número de documentos no índice.
+```bash
 GET e434_c5/_search
-// Pesquisar Dados (_search): Fundamental para encontrar informações específicas no índice, seja por meio de uma busca geral ou de critérios específicos.
+``` 
+>Nota: Este comando realiza uma busca geral no índice.
 
+```json
 GET e434_c5/_search
 {
   "query": {
@@ -198,12 +204,14 @@ GET e434_c5/_search
     }
   }
 }
-// Busca específica: Faz uma busca onde o campo "FIELD" contém "TEXT".
-
-DELETE e434_c5 
-// Excluir Índice (DELETE): Usado para limpar ou reconfigurar o índice, removendo todos os dados que ele contém.
-
 ```
+>Nota: Faz uma busca onde o campo "FIELD" contém "TEXT".
+```
+DELETE e434_c5 
+```
+>Nota: Este comando exclui o índice e434_c5, removendo todos os dados.
+
+
 >Para se aprofundar mais no uso do Elasticsearch, recomendo consultar a [documentação oficial do Elastic](https://www.elastic.co/docs). Ela oferece guias completos, tutoriais e referências detalhadas sobre todos os recursos e funcionalidades disponíveis.
 
 
