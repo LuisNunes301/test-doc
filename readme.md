@@ -99,8 +99,10 @@ pip install selenium
 
 ##### 3.1.6 Git
   - Instalar [git](https://git-scm.com/download/)
-
-falta notepad++,emditor
+##### 3.1.7 Notepad++
+- Instalar [Notepad++](https://notepad-plus-plus.org/downloads/)
+##### 3.1.8 Emditor
+- Instalar [Emditor](https://www.emeditor.com/#download)
 ### 4. Comandos Necessários para Sobreviver.
 ```bash
 - `cd` - Mudar de diretório
