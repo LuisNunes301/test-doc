@@ -12,13 +12,16 @@
      - [Eclipse](#314-eclipse)
      - [Postman e Elastic](#315-postman-e-elastic)
      - [Git](#316-git)
+     - [Notepad++](#317-notepad)
+     - [Emditor](#318-git)
 4. [Comandos Necessários para Sobreviver.](#4-comandos-necessários-para-sobreviver)
 5. [Como Cortar Arquivos Rápido sem Modificar.](#5-como-cortar-arquivos-rápido-sem-modificar)
 6. [Qual Migrador Usar?](#6-qual-migrador-usar)
 7. [Anotações no XTR Update.](#7-anotações-no-xtr-update)
 8. [O Que Colocar na Pasta de Operações.](#8-o-que-colocar-na-pasta-de-operações)
 9. [Rotina de versionamento de codigo.](#9-rotina-de-versionamento-de-codigo)
-10. [Confie em nós.](#10-confie-em-nós)
+10. [Codigos para a verifição da migração dos dados.](#10-codigos-para-a-verifição-da-migração-dos-dados)
+11. [Confie em nós.](#11-confie-em-nós)
 
 
 ## 1. Introdução.
@@ -62,7 +65,7 @@ Fornecer um guia (quase)completo para configuração de ambiente, instalação d
   - [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)
   - [Excel Viewer](https://marketplace.visualstudio.com/items?itemName=GrapeCity.gc-excelviewer)
 
-> **Observação:** Configurações visuais e pessoais do Visual Studio Code podem ser ajustadas de acordo com a preferência de cada pessoa.
+> **Observação:** As configurações visuais e personalizadas do Visual Studio Code podem ser ajustadas de acordo com as preferências individuais de cada usuário..
 ##### 3.1.2 Python
 - Instalar a última versão da linguagem de programação.
 - **Recomendação:** Caso já tenha o Python instalado, execute:
@@ -99,10 +102,13 @@ pip install selenium
 
 ##### 3.1.6 Git
   - Instalar [git](https://git-scm.com/download/)
+  
 ##### 3.1.7 Notepad++
 - Instalar [Notepad++](https://notepad-plus-plus.org/downloads/)
+
 ##### 3.1.8 Emditor
 - Instalar [Emditor](https://www.emeditor.com/#download)
+
 ### 4. Comandos Necessários para Sobreviver.
 ```bash
 - `cd` - Mudar de diretório
@@ -171,9 +177,38 @@ pip install selenium
   git push origin develop  # Enviar o repositório atualizado para o GitLab
 ```
 
+## 10. Codigos para a verifição da migração dos dados.
+
+**Uma breve rotina de codigo utilizado no elastic search.**
+```json 
+GET e434_c5/_mapping
+// Obter Estrutura do Índice (_mapping): Útil para verificar se os dados estão sendo armazenados corretamente de acordo com a estrutura esperada.
+
+GET e434_c5/_count
+// Contar Documentos (_count): Serve para monitoramento e análise rápida do volume de dados.
+
+GET e434_c5/_search
+// Pesquisar Dados (_search): Fundamental para encontrar informações específicas no índice, seja por meio de uma busca geral ou de critérios específicos.
+
+GET e434_c5/_search
+{
+  "query": {
+    "match": {
+      "FIELD": "TEXT"
+    }
+  }
+}
+// Busca específica: Faz uma busca onde o campo "FIELD" contém "TEXT".
+
+DELETE e434_c5 
+// Excluir Índice (DELETE): Usado para limpar ou reconfigurar o índice, removendo todos os dados que ele contém.
+
+```
+>Para se aprofundar mais no uso do Elasticsearch, recomendo consultar a [documentação oficial do Elastic](https://www.elastic.co/docs). Ela oferece guias completos, tutoriais e referências detalhadas sobre todos os recursos e funcionalidades disponíveis.
 
 
-## 10. Confie em nós.
+
+## 11. Confie em nós.
 
 Este documento é uma diretriz para os processos de Engenharia de Dados da Consiste. Ele visa fornecer uma visão geral dos processos e procedimentos a serem seguidos pela equipe, garantindo a qualidade e a segurança dos dados coletados e processados.
 
