@@ -195,7 +195,7 @@ GET e434_c5/_search
 ``` 
 >Nota: Este comando realiza uma busca geral no índice.
 
-```json
+```http
 GET e434_c5/_search
 {
   "query": {
