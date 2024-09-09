@@ -17,7 +17,7 @@
 6. [Qual Migrador Usar?](#6-qual-migrador-usar)
 7. [Anotações no XTR Update.](#7-anotações-no-xtr-update)
 8. [O Que Colocar na Pasta de Operações.](#8-o-que-colocar-na-pasta-de-operações)
-9. [Comandos necessarios para upar um repositorio para o gitlab.](#9-comandos-necessarios-para-upar-um-repositorio-para-o-gitlab)
+9. [Rotina de versionamento de codigo.](#9-rotina-de-versionamento-de-codigo)
 10. [Confie em nós.](#10-confie-em-nós)
 
 
@@ -26,11 +26,13 @@ Bem-vindo ao guia de **Engenharia de Dados**!
 
 Este documento é uma **diretriz** para os processos de **Engenharia de Dados** da Consiste, visando fornecer uma visão geral dos processos e procedimentos a serem seguidos pela equipe, garantindo a **qualidade** e a **segurança** dos dados coletados e processados.
 
-Aqui, você encontrará informações sobre como **configurar o ambiente**, **instalar ferramentas e bibliotecas necessárias**, além de instruções para a **execução de tarefas de engenharia de dados**, como **manipulação de arquivos** e utilização de **migradores de dados**.
+Este guia é dividido em seções, cada uma abordando um tópico específico, desde a **apresentação** até a **configuração de recursos** e procedimentos para a **realização de atividades**.
 
-Este guia é dividido em seções, cada uma abordando um tópico específico, desde a **introdução** até a **configuração de ferramentas** e procedimentos para a **execução de tarefas**.
+Aqui, você encontrará informações sobre como **preparar o ambiente de trabalho**, **instalar utilitários e bibliotecas essenciais**, além de instruções para a **execução de tarefas de engenharia de dados**, como **gerenciamento de arquivos** e utilização de **migradores de dados**.
 
-- Índice: fornece uma visão geral do conteúdo do guia.
+
+
+- **Índice**: fornece uma visão geral do conteúdo do guia.
 - **Introdução**: apresenta o objetivo e o escopo do guia.
 - **Objetivos**: descreve os objetivos do guia.
 - **Programas, Frameworks e Bibliotecas Necessários**: lista as ferramentas e bibliotecas necessárias para a execução de tarefas de engenharia de dados.
@@ -82,21 +84,21 @@ pip install selenium
 ##### 3.1.3 Java e JDK
 - **Requisitos:**
     - [Java 8](https://www.java.com/pt-BR/download/ie_manual.jsp?locale=pt_BR)
-    - [JDK Development Kit 17.0](https://download.oracle.com/java/17/archive/jdk-17.0.11_windows-x64_bin.msi)
+    - [JDK Development Kit 17.0](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 
 ##### 3.1.4 Eclipse
   -  Instalar a última versão do aplicativo: 
-      - [Eclipse ide](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2024-06/R/eclipse-inst-jre-win64.exe)
+      - [Eclipse ide](https://eclipseide.org)
   -  Adicionar o plugin no marketplace: 
-      - [JSON Editor Plugin](https://marketplace.eclipse.org/).
+      - [JSON Editor Plugin](https://marketplace.eclipse.org/content/json-editor-plugin).
 ##### 3.1.5 Postman e Elastic
-- [Postman](https://dl.pstmn.io/download/latest/win64)
+- [Postman](https://www.postman.com/downloads/)
 - Configurar o Postman para testes de API.
 - Sandbox: http://sandbox.consiste.com.br:5601/app/dev_tools#/console
 >**Observação:** Precisa estar com a VPN ligada para acessar.
 
 ##### 3.1.6 Git
-  - Instalar [git](https://git-scm.com/download/win)
+  - Instalar [git](https://git-scm.com/download/)
 
 falta notepad++,emditor
 ### 4. Comandos Necessários para Sobreviver.
@@ -109,7 +111,8 @@ falta notepad++,emditor
 ```
 ### 5. Como Cortar Arquivos Rápido sem Modificar.
  ```bash
-    sed -n '1p; <inicio>,<fim>p' arquivo_original > arquivo_novo.csv
+    sed -n '1p; <inicio>,<fim>p' x > y
+    ou
     awk 'NR>=10 && NR<=1000' x.csv > y.csv
   
 ```  
@@ -117,7 +120,7 @@ falta notepad++,emditor
   - O comando `sed` -n '1p; <inicio>,<fim>p' arquivo_original > arquivo_novo.csv copia a primeira linha e o intervalo de linhas entre <inicio> e <fim> do arquivo arquivo_original para arquivo_novo.csv.
   Este comando é útil para manter o cabeçalho de um arquivo CSV ao selecionar um subconjunto de linhas.
 ### 6. Qual Migrador Usar?
-- **Migrador-Docker:** Utilizado para arquivos `xlsx`.
+- **Migrador-Docker:** Utilizar quando for necessario normalizar para quando o tipo de arquivo for diferente de `csv`.
 - **Migrador-CSV:** Utilizado para arquivos `csv`.
 - **Migrador-JSON:** Utilizado para arquivos `json`.
 - **Migrador-API:** Utilizado para integrações de API.
@@ -128,24 +131,33 @@ falta notepad++,emditor
   - `#Cura`: Curadoria
   - `#ED`: Engenharia de Dados
   - `#OP`: Operação
-    - 001 Migrador-JSON TEM QUE VERIFICAR ISSO COM MICHAEL
+    - 001 Migrador-CSV
     - 002 Migrador-API
-    - 003 Migrador-CSV
     - 004 Migrador-Docker
+    - 006 Migrador-Json
 - **Template de Anotação:**
-  - **Instrução de trabalho usada:** ED-000
+  - **Instrução de trabalho usada:** XX-00X (mudar correspondente a anotação).
   - **Necessário reoperar a carga:** SIM ou NÃO
   - **O que foi feito no app:** "Novo aplicativo", "Correção do mapping", "Correção do campo X", etc.
 >**Observação** Copiar e colar, com ctrl + shift + v para que cole sem formatação.
 
 ### 8. O Que Colocar na Pasta de Operações.
-- VERIFICAR COM SCHUMAKER PARA AJEITAR ISSO
-- **Quando é migrador-docker:** Incluir todos os arquivos de configuração do Docker e scripts necessários para executar a migração.
-- **Quando é CSV:** Colocar arquivos `.csv` originais e transformados, além de scripts de processamento de dados.
-- **Quando é JSON:** Incluir arquivos `.json` originais, scripts de validação e transformação de dados.
-- **Migrador API:** Colocar scripts de integração, configurações de conexão e documentação da API utilizada.
+**Verificar e não subir os `logs` e arquivos que estão no `/dataNormalizadorAssets`**
+- **Quando é migrador-docker:** Incluir todos os arquivos na pasta da operacão, seguindo o seguinte modelo.
+![docker](/assets/docker.png)
 
-## 9. Comandos necessarios para upar um repositorio para o gitlab.
+- **Quando é Migrador-CSV:** Incluir todos os arquivos na pasta da operacão, seguindo o seguinte modelo.
+![csv](/assets/csv.png)
+
+>**Se atentar para quando o arquivo a ser executado tiver mais de 1M docs, a entidade deve seguir o seguinte modelo na pasta da operações.**
+![csv-ingestor](/assets/csv-ingestor.png)
+- **Quando é JSON:** Incluir todos os arquivos na pasta da operacão, seguindo o seguinte modelo, há de reparar que é bem semelhante ao **Migrador-CSV**.
+![json](/assets/json.png)
+
+- **Migrador API:** Incluir todos os arquivos na pasta da operacão, seguindo o seguinte modelo, há de reparar que é bem semelhante ao **Migrador-CSV**.
+![api](/assets/api.png)
+
+## 9. Rotina de versionamento de codigo.
 
 ```bash
   git status # Verificar o status do repositório
