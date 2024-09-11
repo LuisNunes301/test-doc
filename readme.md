@@ -57,6 +57,7 @@ Fornecer um guia (quase)completo para configuração de ambiente, instalação d
 ### 3.1. Ferramentas Requeridas na Máquina.
 
 ##### 3.1.1 Visual Studio Code
+- Instalar [Vscode](https://code.visualstudio.com/Download)
 - **Extensões Necessárias:**
   - [Spring Boot Extension Pack](https://marketplace.visualstudio.com/items?itemName=Pivotal.vscode-spring-boot)
   - [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
@@ -67,6 +68,7 @@ Fornecer um guia (quase)completo para configuração de ambiente, instalação d
 
 > **Observação:** As configurações visuais e personalizadas do Visual Studio Code podem ser ajustadas de acordo com as preferências individuais de cada usuário..
 ##### 3.1.2 Python
+- Instalar [Python](https://www.python.org/downloads/)
 - Instalar a última versão da linguagem de programação.
 - **Recomendação:** Caso já tenha o Python instalado, execute:
 ```bash
@@ -116,6 +118,7 @@ pip install selenium
 - `sh -T arquivo` - Executar um script shell
 - `ls` - Listar arquivos do diretorio corrente
 - `cat arquivo` - Exibe conteudo de um arquivo
+- `file --mime-encoding` NOMEARQUIVO.csv
 ```
 ### 5. Como Cortar Arquivos Rápido sem Modificar.
  ```bash
