@@ -1,6 +1,10 @@
 ![enter image description here](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)![enter image description here](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)![enter image description here](https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white)![enter image description here](https://img.shields.io/badge/Elastic_Search-005571?style=for-the-badge&logo=elasticsearch&logoColor=whit)![enter image description here](https://img.shields.io/badge/GitLab-330F63?style=for-the-badge&logo=gitlab&logoColor=white)
+
+
 # Documentação Engenharia de Dados
 ## Índice
+
+
 
 1. [Introdução.](#1-introdução)
 2. [Objetivos.](#2-objetivos)
@@ -26,6 +30,8 @@
 
 
 ## 1. Introdução.
+<div style="text-align: justify;">
+
 Bem-vindo ao guia de **Engenharia de Dados**!
 
 Este documento é uma **diretriz** para os processos de **Engenharia de Dados** da Consiste, visando fornecer uma visão geral dos processos e procedimentos a serem seguidos pela equipe, garantindo a **qualidade** e a **segurança** dos dados coletados e processados.
@@ -33,10 +39,13 @@ Este documento é uma **diretriz** para os processos de **Engenharia de Dados** 
 Este guia é dividido em seções, cada uma abordando um tópico específico, desde a **apresentação** até a **configuração de recursos** e procedimentos para a **realização de atividades**.
 
 Aqui, você encontrará informações sobre como **preparar o ambiente de trabalho**, **instalar utilitários e bibliotecas essenciais**, além de instruções para a **execução de tarefas de engenharia de dados**, como **gerenciamento de arquivos** e utilização de **migradores de dados**.
+</div>
+
 
 
 
 ### Estrutura do Guia:
+<div style="text-align: justify;">
 
 - **Objetivos**: Apresenta os principais objetivos deste guia, destacando as metas que você deve alcançar ao seguir estas diretrizes.
   
@@ -61,8 +70,15 @@ Aqui, você encontrará informações sobre como **preparar o ambiente de trabal
 - **Confie em Nós**: Finaliza com uma mensagem de confiança nas práticas e processos descritos no guia.
 
 Esperamos que este guia seja útil para você! Se tiver alguma dúvida ou precisar de mais ajuda, sinta-se à vontade para perguntar.
+</div>
+
 ## 2. Objetivos.
-Fornecer um guia (quase)completo para configuração de ambiente, instalação de ferramentas e bibliotecas, além de instruções necessárias para a execução de tarefas de engenharia de dados, como manipulação de arquivos e utilização de migradores de dados.
+<div style="text-align: justify;">
+
+Fornecer um guia (quase) completo para configuração de ambiente, instalação de ferramentas e bibliotecas, além de instruções necessárias para a execução de tarefas de engenharia de dados, como manipulação de arquivos e utilização de migradores de dados.
+
+</div>
+
 
 
 ## 3. Programas, Frameworks e Bibliotecas Necessários.
