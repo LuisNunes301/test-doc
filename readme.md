@@ -153,7 +153,7 @@ pip install openpyxl pandas beautifulsoup4 requests ipykernel lxml selenium
     - 002 Migrador-API
     - 004 Migrador-Docker
     - 006 Migrador-Json
-- **Template de Anotação:**
+- **Template de Anotação para OP:**
   - **Instrução de trabalho usada:** XX-00X (mudar correspondente a anotação).
   - **Necessário reoperar a carga:** SIM ou NÃO
   - **O que foi feito no app:** "Novo aplicativo", "Correção do mapping", "Correção do campo X", etc.
