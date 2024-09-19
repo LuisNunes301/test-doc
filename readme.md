@@ -30,6 +30,13 @@
 
 
 ## 1. Introdução.
+<style>
+    .justified {
+        text-align: justify;
+    }
+</style>
+
+<div class="justified">
 
 Bem-vindo ao guia de **Engenharia de Dados**!
 
@@ -38,6 +45,10 @@ Este documento é uma **diretriz** para os processos de **Engenharia de Dados** 
 Este guia é dividido em seções, cada uma abordando um tópico específico, desde a **apresentação** até a **configuração de recursos** e procedimentos para a **realização de atividades**.
 
 Aqui, você encontrará informações sobre como **preparar o ambiente de trabalho**, **instalar utilitários e bibliotecas essenciais**, além de instruções para a **execução de tarefas de engenharia de dados**, como **gerenciamento de arquivos** e utilização de **migradores de dados**.
+
+</div>
+
+
 
 
 
