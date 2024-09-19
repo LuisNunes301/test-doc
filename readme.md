@@ -183,9 +183,8 @@ pip install openpyxl pandas beautifulsoup4 requests ipykernel lxml selenium
   git add .  # Salvar atualizações na branch atual
   git commit -m "DESCRIÇÃO DA MODIFICAÇÃO"  # Realizar um commit com a descrição do nome da Entidade
   git checkout develop  # Entrar no diretório 'develop'
-  git pull origin develop  # Verificar se há alguma atualização
-  git merge <BRANCH_ATUALIZADA>  # Mesclar as alterações da branch atualizada para o repositório 'develop'
-  git push origin develop  # Enviar o repositório atualizado para o GitLab
+  git pull # Verificar se há alguma atualização
+  git push # Enviar o repositório atualizado para o GitLab
 ```
 
 ## 10. Codigos para a verifição da migração dos dados.
