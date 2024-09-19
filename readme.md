@@ -199,6 +199,7 @@ pip install openpyxl pandas beautifulsoup4 requests ipykernel lxml selenium
 
 ## 10. Codigos para a verifição da migração dos dados.
 **Uma breve rotina de codigo utilizado no elastic search.**
+> Precisa estar com a VPN ligada
 ##### Comandos Básicos
 
 ```bash
