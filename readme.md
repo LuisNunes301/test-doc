@@ -30,7 +30,6 @@
 
 
 ## 1. Introdução.
-<div style="text-align: justify;">
 
 Bem-vindo ao guia de **Engenharia de Dados**!
 
@@ -39,13 +38,10 @@ Este documento é uma **diretriz** para os processos de **Engenharia de Dados** 
 Este guia é dividido em seções, cada uma abordando um tópico específico, desde a **apresentação** até a **configuração de recursos** e procedimentos para a **realização de atividades**.
 
 Aqui, você encontrará informações sobre como **preparar o ambiente de trabalho**, **instalar utilitários e bibliotecas essenciais**, além de instruções para a **execução de tarefas de engenharia de dados**, como **gerenciamento de arquivos** e utilização de **migradores de dados**.
-</div>
-
 
 
 
 ### Estrutura do Guia:
-<div style="text-align: justify;">
 
 - **Objetivos**: Apresenta os principais objetivos deste guia, destacando as metas que você deve alcançar ao seguir estas diretrizes.
   
@@ -70,15 +66,8 @@ Aqui, você encontrará informações sobre como **preparar o ambiente de trabal
 - **Confie em Nós**: Finaliza com uma mensagem de confiança nas práticas e processos descritos no guia.
 
 Esperamos que este guia seja útil para você! Se tiver alguma dúvida ou precisar de mais ajuda, sinta-se à vontade para perguntar.
-</div>
-
 ## 2. Objetivos.
-<div style="text-align: justify;">
-
 Fornecer um guia (quase) completo para configuração de ambiente, instalação de ferramentas e bibliotecas, além de instruções necessárias para a execução de tarefas de engenharia de dados, como manipulação de arquivos e utilização de migradores de dados.
-
-</div>
-
 
 
 ## 3. Programas, Frameworks e Bibliotecas Necessários.
