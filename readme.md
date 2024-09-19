@@ -21,7 +21,8 @@
 8. [O Que Colocar na Pasta de Operações.](#8-o-que-colocar-na-pasta-de-operações)
 9. [Rotina de versionamento de codigo.](#9-rotina-de-versionamento-de-codigo)
 10. [Codigos para a verifição da migração dos dados.](#10-codigos-para-a-verifição-da-migração-dos-dados)
-11. [Confie em nós.](#11-confie-em-nós)
+11. [Funcionamento do Docker](#11-funcionamento-do-docker)
+12. [Confie em nós.](#12-confie-em-nós)
 
 
 ## 1. Introdução.
@@ -78,13 +79,7 @@ Fornecer um guia (quase)completo para configuração de ambiente, instalação d
 ```
 - **Dependências Necessárias:**
 ```bash
-pip install openpyxl
-pip install pandas
-pip install beautifulsoup4
-pip install requests
-pip install ipykernel
-pip install lxml
-pip install selenium
+pip install openpyxl pandas beautifulsoup4 requests ipykernel lxml selenium
 ```
 ##### 3.1.3 Java e JDK
 - **Requisitos:**
@@ -124,7 +119,7 @@ pip install selenium
  ```bash
     sed -n '1p; <inicio>,<fim>p' x > y
     ou
-    awk 'NR>=10 && NR<=1000' x.csv > y.csv
+    awk 'NR == 1|| NR>=10 && NR<=1000' x.csv > y.csv
   
 ```  
   - O comando usado `awk` para selecionar as linhas de 10 a 1000 do arquivo x.csv e salva essas linhas no arquivo y.csv.
@@ -150,13 +145,14 @@ pip install selenium
   - **Instrução de trabalho usada:** XX-00X (mudar correspondente a anotação).
   - **Necessário reoperar a carga:** SIM ou NÃO
   - **O que foi feito no app:** "Novo aplicativo", "Correção do mapping", "Correção do campo X", etc.
->**Observação** Copiar e colar, com ctrl + shift + v para que cole sem formatação.
+>**Observação** Copiar e colar, com ctrl + shift + v para colar sem formatação.
 
 ### 8. O Que Colocar na Pasta de Operações.
 **Verificar e não subir os `logs` e arquivos que estão no `/dataNormalizadorAssets`**
+
 - **Quando é migrador-docker:** Incluir todos os arquivos na pasta da operacão, seguindo o seguinte modelo.
 ![docker](/assets/docker.png)
-
+> Observação .jar é pacote que contém arquivos relacionados a um projeto Java, como codigo compilado, bibliotecas, metadados e recursos. Deve ser gerado pela IDE ou por linha de comando.
 - **Quando é Migrador-CSV:** Incluir todos os arquivos na pasta da operacão, seguindo o seguinte modelo.
 ![csv](/assets/csv.png)
 
@@ -217,9 +213,43 @@ DELETE e434_c5
 
 >Para se aprofundar mais no uso do Elasticsearch, recomendo consultar a [documentação oficial do Elastic](https://www.elastic.co/docs). Ela oferece guias completos, tutoriais e referências detalhadas sobre todos os recursos e funcionalidades disponíveis.
 
+## 11. Funcionamento do Docker
+-  **Execução de Containers**: No Migrador-Docker, há uma pasta cycle-controller que faz a execução da containerização da aplicação, usamos ssh para ativar-lo.
+```bash
+ssh -T eXXXX-play.sh 
+# Comando que usamos iniciar um arquivo shell
+```
+> Há um bug que pode acontecer algumas vezes que na execução desse arquivo na OP, é bom sempre veri se estes arquivos abaixo estão configurado como Unix (LF).
 
+- Foi feito a mudança pelo notepad++, clicando com o botaão direto e selecionando como Unix (LF)
 
-## 11. Confie em nós.
+![unix](/assets/windowsCRLFtoUnixLF.png)
+
+- Comandos básicos do Docker
+```bash
+## Iniciar um container
+docker run -it ubuntu /bin/bash
+
+## Listar containers em execução
+docker ps
+
+## Parar um container
+docker stop <ID_CONTAINER>
+
+## Remover um container
+docker rm <ID_CONTAINER>
+
+## Criar uma imagem
+docker build -t minha-imagem .
+
+## Listar imagens
+docker images
+
+## Remover uma imagem
+docker rmi <ID_IMAGEM>
+```
+
+## 12. Confie em nós.
 
 Este documento é uma diretriz para os processos de Engenharia de Dados da Consiste. Ele visa fornecer uma visão geral dos processos e procedimentos a serem seguidos pela equipe, garantindo a qualidade e a segurança dos dados coletados e processados.
 
