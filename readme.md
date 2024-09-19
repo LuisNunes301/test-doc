@@ -4,16 +4,16 @@
 
 1. [Introdução.](#1-introdução)
 2. [Objetivos.](#2-objetivos)
-3. [Programas, Frameworks e Bibliotecas Necessários.](#3-programas-frameworks-e-bibliotecas-necessários)
-   - [Ferramentas Requeridas na Máquina.](#31-ferramentas-requeridas-na-máquina)
-     - [Visual Studio Code](#311-visual-studio-code)
-     - [Python](#312-python)
-     - [Java e JDK](#313-java-e-jdk)
-     - [Eclipse](#314-eclipse)
-     - [Postman e Elastic](#315-postman-e-elastic)
-     - [Git](#316-git)
-     - [Notepad++](#317-notepad)
-     - [Emditor](#318-git)
+3. [Programas, Frameworks e Bibliotecas Necessários.](#3-programas-frameworks-e-bibliotecas-necessários)  
+   - 3.1 [Ferramentas Requeridas na Máquina.](#31-ferramentas-requeridas-na-máquina)  
+      - 3.1.1 [Visual Studio Code](#311-visual-studio-code)  
+      3.1.2 [Python](#312-python)  
+      3.1.3 [Java e JDK](#313-java-e-jdk)  
+      3.1.4 [Eclipse](#314-eclipse)  
+      3.1.5 [Postman e Elastic](#315-postman-e-elastic)  
+      3.1.6 [Git](#316-git)  
+      3.1.7 [Notepad++](#317-notepad++)  
+      3.1.8 [Emditor](#318-emditor)
 4. [Comandos Necessários para Sobreviver.](#4-comandos-necessários-para-sobreviver)
 5. [Como Cortar Arquivos Rápido sem Modificar.](#5-como-cortar-arquivos-rápido-sem-modificar)
 6. [Qual Migrador Usar?](#6-qual-migrador-usar)
@@ -36,17 +36,29 @@ Aqui, você encontrará informações sobre como **preparar o ambiente de trabal
 
 
 
-- **Índice**: fornece uma visão geral do conteúdo do guia.
-- **Introdução**: apresenta o objetivo e o escopo do guia.
-- **Objetivos**: descreve os objetivos do guia.
-- **Programas, Frameworks e Bibliotecas Necessários**: lista as ferramentas e bibliotecas necessárias para a execução de tarefas de engenharia de dados.
-- **Comandos Necessários para Sobreviver**: fornece comandos úteis para a execução de tarefas de engenharia de dados.
-- **Como Cortar Arquivos Rápido sem Modificar**: fornece instruções para cortar arquivos rapidamente sem modificar.
-- **Qual Migrador Usar?**: descreve os diferentes tipos de migradores e quando usá-los.
-- **Anotações no XTR Update**: fornece instruções para anotar no XTR Update.
-- **O Que Colocar na Pasta de Operações**: descreve o que colocar na pasta de operações.
-- **Comandos necessarios para upar um repositório para o GitLab**: fornece comandos necessários para upar um repositório para o GitLab.
-- **README**: fornece informações sobre como contribuir com o guia.
+### Estrutura do Guia:
+
+- **Objetivos**: Apresenta os principais objetivos deste guia, destacando as metas que você deve alcançar ao seguir estas diretrizes.
+  
+- **Programas, Frameworks e Bibliotecas Necessários**: Detalha as ferramentas, frameworks e bibliotecas que devem ser instaladas e configuradas em sua máquina para garantir um ambiente de trabalho adequado.
+
+- **Comandos Necessários para Sobreviver**: Uma lista de comandos essenciais que irão facilitar a execução de diversas tarefas no ambiente de Engenharia de Dados.
+
+- **Como Cortar Arquivos Rápido sem Modificar**: Aborda técnicas para cortar arquivos de forma eficiente, sem modificar seu conteúdo original.
+
+- **Qual Migrador Usar?**: Fornece orientações sobre a escolha de migradores de dados, explicando qual utilizar para cada situação.
+
+- **Anotações no XTR Update**: Explica como fazer anotações adequadas no sistema XTR Update para rastrear atualizações e mudanças.
+
+- **O Que Colocar na Pasta de Operações**: Lista os itens essenciais que devem ser armazenados na pasta de operações do projeto para garantir uma boa organização.
+
+- **Rotina de Versionamento de Código**: Aborda as melhores práticas para versionamento de código, garantindo a rastreabilidade e controle de versões.
+
+- **Códigos para a Verificação da Migração dos Dados**: Oferece trechos de código e técnicas para verificar a migração de dados de forma eficiente e segura.
+
+- **Funcionamento do Docker**: Apresenta uma visão geral sobre como o Docker funciona e como ele pode ser utilizado no ambiente de Engenharia de Dados, além de resolução de um problema do dia a dia.
+
+- **Confie em Nós**: Finaliza com uma mensagem de confiança nas práticas e processos descritos no guia.
 
 Esperamos que este guia seja útil para você! Se tiver alguma dúvida ou precisar de mais ajuda, sinta-se à vontade para perguntar.
 ## 2. Objetivos.
