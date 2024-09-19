@@ -30,13 +30,9 @@
 
 
 ## 1. Introdução.
-<style>
-    .justified {
-        text-align: justify;
-    }
-</style>
 
-<div class="justified">
+
+<div style="text-align: justify;">
 
 Bem-vindo ao guia de **Engenharia de Dados**!
 
