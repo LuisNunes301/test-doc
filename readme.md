@@ -274,7 +274,7 @@ docker rmi <ID_IMAGEM>
 
 ## 12. Casos do DIA-DIA.
 
-- Este código irá migrar os dados por API, quando a unidade territorial for uf, corretamente.
+- Esta alteração do método **tratamento()** irá migrar os dados por API, quando a unidade territorial for uf, corretamente.
 
 >Nota: Se atentar/corrigir os parâmetros enviados.
 
