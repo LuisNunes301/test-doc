@@ -26,7 +26,8 @@
 9. [Rotina de versionamento de codigo.](#9-rotina-de-versionamento-de-codigo)
 10. [Codigos para a verifição da migração dos dados.](#10-codigos-para-a-verifição-da-migração-dos-dados)
 11. [Funcionamento do Docker](#11-funcionamento-do-docker)
-12. [Confie em nós.](#12-confie-em-nós)
+12. [Casos do DIA-DIA](#12-Casos-do-DIA-DIA)
+13. [Confie em nós.](#13-confie-em-nós)
 
 
 ## 1. Introdução.
@@ -271,7 +272,50 @@ docker images
 docker rmi <ID_IMAGEM>
 ```
 
-## 12. Confie em nós.
+## 12. Casos do DIA-DIA.
+
+- Este código irá migrar os dados por API, quando a unidade territorial for uf, corretamente.
+
+>Nota: Se atentar/corrigir os parâmetros enviados.
+
+
+```java
+private ArrayList<Map<String, Object>> tratamento(ArrayList<Map<String, Object>> listaDados, String urlDefinitiva,Map<String, Object> field, int totalRepete) {
+        ArrayList<Map<String, Object>> listaDados2 = new ArrayList<>();
+        Map<String, Map<String, Object>> ufMap = new HashMap<>();
+        Map<String, Map<String, Object>> periodoMap = new HashMap<>();
+
+        while (listaDados.size() > 0) {
+            int total = 0;
+
+            while (total < totalRepete && listaDados.size() > 0) {
+                Map<String, Object> dado = listaDados.get(0);
+                String uf = dado.get("D1N").toString();
+                String periodo = dado.get("D3N").toString();
+
+                String ufPeriodoKey = uf + "_" + periodo;
+
+                Map<String, Object> docOut = ufMap.getOrDefault(ufPeriodoKey, new HashMap<>());
+                docOut.put("uf", uf);
+                docOut.put("periodo", periodo);
+
+                ufMap.put(ufPeriodoKey, docOut);
+
+                padronizaUf(docOut, uf);
+                tratarNumero(dado, docOut,field);
+                adicionarCamposPadrão(docOut, urlDefinitiva);
+
+                listaDados.remove(0);
+                total++;
+            }
+        }
+
+        listaDados2.addAll(ufMap.values());
+        return listaDados2;
+    }
+```
+
+## 13. Confie em nós.
 
 Este documento é uma diretriz para os processos de Engenharia de Dados da Consiste. Ele visa fornecer uma visão geral dos processos e procedimentos a serem seguidos pela equipe, garantindo a qualidade e a segurança dos dados coletados e processados.
 
