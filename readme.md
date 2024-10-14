@@ -4,30 +4,28 @@
 # Documentação Engenharia de Dados
 ## Índice
 
-
-
-1. [Introdução.](#1-introdução)
-2. [Objetivos.](#2-objetivos)
-3. [Programas, Frameworks e Bibliotecas Necessários.](#3-programas-frameworks-e-bibliotecas-necessários)  
-   - 3.1 [Ferramentas Requeridas na Máquina.](#31-ferramentas-requeridas-na-máquina)  
-      - 3.1.1 [Visual Studio Code](#311-visual-studio-code)  
-      3.1.2 [Python](#312-python)  
-      3.1.3 [Java e JDK](#313-java-e-jdk)  
-      3.1.4 [Eclipse](#314-eclipse)  
-      3.1.5 [Postman e Elastic](#315-postman-e-elastic)  
-      3.1.6 [Git](#316-git)  
-      3.1.7 [Notepad++](#317-notepad++)  
-      3.1.8 [Emditor](#318-emditor)
-4. [Comandos Necessários para Sobreviver.](#4-comandos-necessários-para-sobreviver)
-5. [Como Cortar Arquivos Rápido sem Modificar.](#5-como-cortar-arquivos-rápido-sem-modificar)
-6. [Qual Migrador Usar?](#6-qual-migrador-usar)
-7. [Anotações no XTR Update.](#7-anotações-no-xtr-update)
-8. [O Que Colocar na Pasta de Operações.](#8-o-que-colocar-na-pasta-de-operações)
-9. [Rotina de versionamento de codigo.](#9-rotina-de-versionamento-de-codigo)
-10. [Codigos para a verifição da migração dos dados.](#10-codigos-para-a-verifição-da-migração-dos-dados)
-11. [Funcionamento do Docker](#11-funcionamento-do-docker)
-12. [Casos do DIA-DIA](#12-Casos-do-DIA-DIA)
-13. [Confie em nós.](#13-confie-em-nós)
+1. [Introdução.][def]
+2. [Objetivos.][def2]
+3. [Programas, Frameworks e Bibliotecas Necessários.][def3]  
+   - 3.1 [Ferramentas Requeridas na Máquina.][def4]  
+      - 3.1.1 [Visual Studio Code][def5]  
+      3.1.2 [Python][def6]  
+      3.1.3 [Java e JDK][def7]  
+      3.1.4 [Eclipse][def8]  
+      3.1.5 [Postman e Elastic][def9]  
+      3.1.6 [Git][def10]  
+      3.1.7 [Notepad++][def11]  
+      3.1.8 [Emditor][def12]
+4. [Comandos Necessários para Sobreviver.][def13]
+5. [Como Cortar Arquivos Rápido sem Modificar.][def14]
+6. [Qual Migrador Usar?][def15]
+7. [Anotações no XTR Update.][def16]
+8. [O Que Colocar na Pasta de Operações.][def17]
+9. [Rotina de versionamento de codigo.][def18]
+10. [Codigos para a verifição da migração dos dados.][def19]
+11. [Funcionamento do Docker][def20]
+12. [Casos do DIA-DIA][def21]
+13. [Faça parte da nossa equipe, contribua para o nosso crescimento.][def22]
 
 
 ## 1. Introdução.
@@ -242,7 +240,7 @@ DELETE e434_c5
 ssh -T eXXXX-play.sh 
 # Comando que usamos iniciar um arquivo shell
 ```
-> Há um bug que pode acontecer algumas vezes que na execução desse arquivo na OP, é bom sempre veri se estes arquivos abaixo estão configurado como Unix (LF).
+> Há um bug que pode acontecer algumas vezes que na execução desse arquivo na OP, é bom sempre verificar se estes arquivos abaixo estão configurado como Unix (LF).
 
 - Foi feito a mudança pelo notepad++, clicando com o botaão direto e selecionando como Unix (LF)
 
@@ -315,7 +313,7 @@ private ArrayList<Map<String, Object>> tratamento(ArrayList<Map<String, Object>>
     }
 ```
 
-## 13. Confie em nós.
+## 13. Faça parte da nossa equipe, **contribua para o nosso crescimento**.
 
 Este documento é uma diretriz para os processos de Engenharia de Dados da Consiste. Ele visa fornecer uma visão geral dos processos e procedimentos a serem seguidos pela equipe, garantindo a qualidade e a segurança dos dados coletados e processados.
 
@@ -326,3 +324,26 @@ Para contribuir com este documento, por favor, siga as seguintes etapas:
 3. Se você precisar fazer alguma alteração no documento, por favor, faça um fork do repositório e envie um pull request com as alterações.
 
 Agradecemos sua contribuição!
+
+[def]: #1-introdução
+[def2]: #2-objetivos
+[def3]: #3-programas-frameworks-e-bibliotecas-necessários
+[def4]: #31-ferramentas-requeridas-na-máquina
+[def5]: #311-visual-studio-code
+[def6]: #312-python
+[def7]: #313-java-e-jdk
+[def8]: #314-eclipse
+[def9]: #315-postman-e-elastic
+[def10]: #316-git
+[def11]: #317-notepad++
+[def12]: #318-emditor
+[def13]: #4-comandos-necessários-para-sobreviver
+[def14]: #5-como-cortar-arquivos-rápido-sem-modificar
+[def15]: #6-qual-migrador-usar
+[def16]: #7-anotações-no-xtr-update
+[def17]: #8-o-que-colocar-na-pasta-de-operações
+[def18]: #9-rotina-de-versionamento-de-codigo
+[def19]: #10-codigos-para-a-verifição-da-migração-dos-dados
+[def20]: #11-funcionamento-do-docker
+[def21]: #12-Casos-do-DIA-DIA
+[def22]: #13-faça-parte-da-nossa-equipe-contribua-para-o-nosso-crescimento
