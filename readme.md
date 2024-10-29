@@ -39,12 +39,6 @@ Este guia é dividido em seções, cada uma abordando um tópico específico, de
 
 Aqui, você encontrará informações sobre como **preparar o ambiente de trabalho**, **instalar utilitários e bibliotecas essenciais**, além de instruções para a **execução de tarefas de engenharia de dados**, como **gerenciamento de arquivos** e utilização de **migradores de dados**.
 
-
-
-
-
-
-
 ### Estrutura do Guia:
 
 - **Objetivos**: Apresenta os principais objetivos deste guia, destacando as metas que você deve alcançar ao seguir estas diretrizes.
@@ -67,7 +61,7 @@ Aqui, você encontrará informações sobre como **preparar o ambiente de trabal
 
 - **Funcionamento do Docker**: Apresenta uma visão geral sobre como o Docker funciona e como ele pode ser utilizado no ambiente de Engenharia de Dados, além de resolução de um problema do dia a dia.
 
-- **Confie em Nós**: Finaliza com uma mensagem de confiança nas práticas e processos descritos no guia.
+- **Faça parte da nossa equipe, contribua para o nosso crescimento**: Finaliza com uma mensagem de confiança nas práticas e processos descritos no guia.
 
 Esperamos que este guia seja útil para você! Se tiver alguma dúvida ou precisar de mais ajuda, sinta-se à vontade para perguntar.
 ## 2. Objetivos.
@@ -232,17 +226,16 @@ DELETE e434_c5
 >Nota: Este comando exclui o índice e434_c5, removendo todos os dados.
 
 
->Para se aprofundar mais no uso do Elasticsearch, recomendo consultar a [documentação oficial do Elastic](https://www.elastic.co/docs). Ela oferece guias completos, tutoriais e referências detalhadas sobre todos os recursos e funcionalidades disponíveis.
+Para se aprofundar mais no uso do Elasticsearch, recomendo consultar a [documentação oficial do Elastic](https://www.elastic.co/docs). Ela oferece guias completos, tutoriais e referências detalhadas sobre todos os recursos e funcionalidades disponíveis.
 
 ## 11. Funcionamento do Docker
 -  **Execução de Containers**: No Migrador-Docker, há uma pasta cycle-controller que faz a execução da containerização da aplicação, usamos ssh para ativar-lo.
 ```bash
-ssh -T eXXXX-play.sh 
+sh -T eXXXX-play.sh 
 # Comando que usamos iniciar um arquivo shell
 ```
-> Há um bug que pode acontecer algumas vezes que na execução desse arquivo na OP, é bom sempre verificar se estes arquivos abaixo estão configurado como Unix (LF).
-
-- Foi feito a mudança pelo notepad++, clicando com o botaão direto e selecionando como Unix (LF)
+> Obs: Há um bug que pode acontecer algumas vezes que na execução desse arquivo na OP, é bom sempre verificar se estes arquivos abaixo estão configurado como Unix (LF).
+Foi feito a mudança pelo notepad++, clicando com o botão direto e selecionando como Unix (LF), assim alterando o tipo de leitura do arquivo.
 
 ![unix](/assets/windowsCRLFtoUnixLF.png)
 
@@ -272,7 +265,7 @@ docker rmi <ID_IMAGEM>
 
 ## 12. Casos do DIA-DIA.
 
-- Esta alteração do método **tratamento()** irá migrar os dados por API, quando a unidade territorial for UF, corretamente.
+1- Esta alteração do método **tratamento()** irá migrar os dados por API, quando a unidade territorial for UF, corretamente.
 
 >Nota: Se atentar/corrigir os parâmetros enviados.
 
@@ -312,7 +305,28 @@ private ArrayList<Map<String, Object>> tratamento(ArrayList<Map<String, Object>>
         return listaDados2;
     }
 ```
+2- Use o fabricando caso queira iterar o fieldByType por nome.
+```java
+... 
+  //Descomentar estes dois campos
+  fieldNames = scheme.fabricandoFieldNames(row, separatorCharactere);
+  fieldTypes = scheme.fabricandoFieldTypes(fieldNames);
+...
+  // Comentar estes dois campos
+  fieldNames = scheme.fabricateFieldNames();
+  fieldTypes = scheme.fabricateFieldTypes();
+...
+```
+3- Padronizar o numero na variavel long.
+>Se atentar/corrigir os parâmetros enviados
+```java
 
+
+//Descomentar no DataTransporter para conseguir mudar que são int/double convertando para long, nos que voce queira do fieldByType.
+  ...
+  camposLong = Arrays.asList(new String[]{"total", "quantidade", "campo2"});
+  ...
+```
 ## 13. Faça parte da nossa equipe, **contribua para o nosso crescimento**.
 
 Este documento é uma diretriz para os processos de Engenharia de Dados da Consiste. Ele visa fornecer uma visão geral dos processos e procedimentos a serem seguidos pela equipe, garantindo a qualidade e a segurança dos dados coletados e processados.
