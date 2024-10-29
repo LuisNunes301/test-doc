@@ -4,29 +4,28 @@
 # Documentação Engenharia de Dados
 ## Índice
 
-
-
-1. [Introdução.](#1-introdução)
-2. [Objetivos.](#2-objetivos)
-3. [Programas, Frameworks e Bibliotecas Necessários.](#3-programas-frameworks-e-bibliotecas-necessários)  
-   - 3.1 [Ferramentas Requeridas na Máquina.](#31-ferramentas-requeridas-na-máquina)  
-      - 3.1.1 [Visual Studio Code](#311-visual-studio-code)  
-      3.1.2 [Python](#312-python)  
-      3.1.3 [Java e JDK](#313-java-e-jdk)  
-      3.1.4 [Eclipse](#314-eclipse)  
-      3.1.5 [Postman e Elastic](#315-postman-e-elastic)  
-      3.1.6 [Git](#316-git)  
-      3.1.7 [Notepad++](#317-notepad++)  
-      3.1.8 [Emditor](#318-emditor)
-4. [Comandos Necessários para Sobreviver.](#4-comandos-necessários-para-sobreviver)
-5. [Como Cortar Arquivos Rápido sem Modificar.](#5-como-cortar-arquivos-rápido-sem-modificar)
-6. [Qual Migrador Usar?](#6-qual-migrador-usar)
-7. [Anotações no XTR Update.](#7-anotações-no-xtr-update)
-8. [O Que Colocar na Pasta de Operações.](#8-o-que-colocar-na-pasta-de-operações)
-9. [Rotina de versionamento de codigo.](#9-rotina-de-versionamento-de-codigo)
-10. [Codigos para a verifição da migração dos dados.](#10-codigos-para-a-verifição-da-migração-dos-dados)
-11. [Funcionamento do Docker](#11-funcionamento-do-docker)
-12. [Confie em nós.](#12-confie-em-nós)
+1. [Introdução.][def]
+2. [Objetivos.][def2]
+3. [Programas, Frameworks e Bibliotecas Necessários.][def3]  
+   - 3.1 [Ferramentas Requeridas na Máquina.][def4]  
+      - 3.1.1 [Visual Studio Code][def5]  
+      3.1.2 [Python][def6]  
+      3.1.3 [Java e JDK][def7]  
+      3.1.4 [Eclipse][def8]  
+      3.1.5 [Postman e Elastic][def9]  
+      3.1.6 [Git][def10]  
+      3.1.7 [Notepad++][def11]  
+      3.1.8 [Emditor][def12]
+4. [Comandos Necessários para Sobreviver.][def13]
+5. [Como Cortar Arquivos Rápido sem Modificar.][def14]
+6. [Qual Migrador Usar?][def15]
+7. [Anotações no XTR Update.][def16]
+8. [O Que Colocar na Pasta de Operações.][def17]
+9. [Rotina de versionamento de codigo.][def18]
+10. [Codigos para a verifição da migração dos dados.][def19]
+11. [Funcionamento do Docker][def20]
+12. [Casos do DIA-DIA][def21]
+13. [Faça parte da nossa equipe, contribua para o nosso crescimento.][def22]
 
 
 ## 1. Introdução.
@@ -39,12 +38,6 @@ Este documento é uma **diretriz** para os processos de **Engenharia de Dados** 
 Este guia é dividido em seções, cada uma abordando um tópico específico, desde a **apresentação** até a **configuração de recursos** e procedimentos para a **realização de atividades**.
 
 Aqui, você encontrará informações sobre como **preparar o ambiente de trabalho**, **instalar utilitários e bibliotecas essenciais**, além de instruções para a **execução de tarefas de engenharia de dados**, como **gerenciamento de arquivos** e utilização de **migradores de dados**.
-
-
-
-
-
-
 
 ### Estrutura do Guia:
 
@@ -68,7 +61,7 @@ Aqui, você encontrará informações sobre como **preparar o ambiente de trabal
 
 - **Funcionamento do Docker**: Apresenta uma visão geral sobre como o Docker funciona e como ele pode ser utilizado no ambiente de Engenharia de Dados, além de resolução de um problema do dia a dia.
 
-- **Confie em Nós**: Finaliza com uma mensagem de confiança nas práticas e processos descritos no guia.
+- **Faça parte da nossa equipe, contribua para o nosso crescimento**: Finaliza com uma mensagem de confiança nas práticas e processos descritos no guia.
 
 Esperamos que este guia seja útil para você! Se tiver alguma dúvida ou precisar de mais ajuda, sinta-se à vontade para perguntar.
 ## 2. Objetivos.
@@ -233,17 +226,16 @@ DELETE e434_c5
 >Nota: Este comando exclui o índice e434_c5, removendo todos os dados.
 
 
->Para se aprofundar mais no uso do Elasticsearch, recomendo consultar a [documentação oficial do Elastic](https://www.elastic.co/docs). Ela oferece guias completos, tutoriais e referências detalhadas sobre todos os recursos e funcionalidades disponíveis.
+Para se aprofundar mais no uso do Elasticsearch, recomendo consultar a [documentação oficial do Elastic](https://www.elastic.co/docs). Ela oferece guias completos, tutoriais e referências detalhadas sobre todos os recursos e funcionalidades disponíveis.
 
 ## 11. Funcionamento do Docker
 -  **Execução de Containers**: No Migrador-Docker, há uma pasta cycle-controller que faz a execução da containerização da aplicação, usamos ssh para ativar-lo.
 ```bash
-ssh -T eXXXX-play.sh 
+sh -T eXXXX-play.sh 
 # Comando que usamos iniciar um arquivo shell
 ```
-> Há um bug que pode acontecer algumas vezes que na execução desse arquivo na OP, é bom sempre veri se estes arquivos abaixo estão configurado como Unix (LF).
-
-- Foi feito a mudança pelo notepad++, clicando com o botaão direto e selecionando como Unix (LF)
+> Obs: Há um bug que pode acontecer algumas vezes que na execução desse arquivo na OP, é bom sempre verificar se estes arquivos abaixo estão configurado como Unix (LF).
+Foi feito a mudança pelo notepad++, clicando com o botão direto e selecionando como Unix (LF), assim alterando o tipo de leitura do arquivo.
 
 ![unix](/assets/windowsCRLFtoUnixLF.png)
 
@@ -271,7 +263,71 @@ docker images
 docker rmi <ID_IMAGEM>
 ```
 
-## 12. Confie em nós.
+## 12. Casos do DIA-DIA.
+
+1- Esta alteração do método **tratamento()** irá migrar os dados por API, quando a unidade territorial for UF, corretamente.
+
+>Nota: Se atentar/corrigir os parâmetros enviados.
+
+
+```java
+private ArrayList<Map<String, Object>> tratamento(ArrayList<Map<String, Object>> listaDados, String urlDefinitiva,Map<String, Object> field, int totalRepete) {
+        ArrayList<Map<String, Object>> listaDados2 = new ArrayList<>();
+        Map<String, Map<String, Object>> ufMap = new HashMap<>();
+        Map<String, Map<String, Object>> periodoMap = new HashMap<>();
+
+        while (listaDados.size() > 0) {
+            int total = 0;
+
+            while (total < totalRepete && listaDados.size() > 0) {
+                Map<String, Object> dado = listaDados.get(0);
+                String uf = dado.get("D1N").toString();
+                String periodo = dado.get("D3N").toString();
+
+                String ufPeriodoKey = uf + "_" + periodo;
+
+                Map<String, Object> docOut = ufMap.getOrDefault(ufPeriodoKey, new HashMap<>());
+                docOut.put("uf", uf);
+                docOut.put("periodo", periodo);
+
+                ufMap.put(ufPeriodoKey, docOut);
+
+                padronizaUf(docOut, uf);
+                tratarNumero(dado, docOut,field);
+                adicionarCamposPadrão(docOut, urlDefinitiva);
+
+                listaDados.remove(0);
+                total++;
+            }
+        }
+
+        listaDados2.addAll(ufMap.values());
+        return listaDados2;
+    }
+```
+2- Use o fabricando caso queira iterar o fieldByType por nome.
+```java
+... 
+  //Descomentar estes dois campos
+  fieldNames = scheme.fabricandoFieldNames(row, separatorCharactere);
+  fieldTypes = scheme.fabricandoFieldTypes(fieldNames);
+...
+  // Comentar estes dois campos
+  fieldNames = scheme.fabricateFieldNames();
+  fieldTypes = scheme.fabricateFieldTypes();
+...
+```
+3- Padronizar o numero na variavel long.
+>Se atentar/corrigir os parâmetros enviados
+```java
+
+
+//Descomentar no DataTransporter para conseguir mudar que são int/double convertando para long, nos que voce queira do fieldByType.
+  ...
+  camposLong = Arrays.asList(new String[]{"total", "quantidade", "campo2"});
+  ...
+```
+## 13. Faça parte da nossa equipe, **contribua para o nosso crescimento**.
 
 Este documento é uma diretriz para os processos de Engenharia de Dados da Consiste. Ele visa fornecer uma visão geral dos processos e procedimentos a serem seguidos pela equipe, garantindo a qualidade e a segurança dos dados coletados e processados.
 
@@ -282,3 +338,26 @@ Para contribuir com este documento, por favor, siga as seguintes etapas:
 3. Se você precisar fazer alguma alteração no documento, por favor, faça um fork do repositório e envie um pull request com as alterações.
 
 Agradecemos sua contribuição!
+
+[def]: #1-introdução
+[def2]: #2-objetivos
+[def3]: #3-programas-frameworks-e-bibliotecas-necessários
+[def4]: #31-ferramentas-requeridas-na-máquina
+[def5]: #311-visual-studio-code
+[def6]: #312-python
+[def7]: #313-java-e-jdk
+[def8]: #314-eclipse
+[def9]: #315-postman-e-elastic
+[def10]: #316-git
+[def11]: #317-notepad++
+[def12]: #318-emditor
+[def13]: #4-comandos-necessários-para-sobreviver
+[def14]: #5-como-cortar-arquivos-rápido-sem-modificar
+[def15]: #6-qual-migrador-usar
+[def16]: #7-anotações-no-xtr-update
+[def17]: #8-o-que-colocar-na-pasta-de-operações
+[def18]: #9-rotina-de-versionamento-de-codigo
+[def19]: #10-codigos-para-a-verifição-da-migração-dos-dados
+[def20]: #11-funcionamento-do-docker
+[def21]: #12-Casos-do-DIA-DIA
+[def22]: #13-faça-parte-da-nossa-equipe-contribua-para-o-nosso-crescimento
