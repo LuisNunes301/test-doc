@@ -189,6 +189,23 @@ pip install openpyxl pandas beautifulsoup4 requests ipykernel lxml selenium
   git pull # Verificar se há alguma atualização
   git push # Enviar o repositório atualizado para o GitLab
 ```
+> Padronização de Commit
+```
+Abaixo vou deixar os padrões mais utilizados:
+#start: Inicio do projeto.
+#feat: Cria um novo recurso no código.
+#update: Atualização ou modificação no código, para indicar ajuste ou melhoria.
+#fix: Corrige um bug no código.
+#refactor: Uma alteração que não corrige um bug, nem adiciona um novo recurso.
+#test: Adicionando testes ausentes ou corrigindo testes existentes.
+#docs: Apenas a documentação.
+#perf: Mudança de Código que melhora performance.
+#build: Alterações que afetam o sistema de compilação ou dependências externas (npm, gulp, broccoli).
+```
+>Nota: Exemplo de padrão para commit 
+```
+git commit -m "#fix municipio não padronizados"
+```
 
 ## 10. Codigos para a verifição da migração dos dados.
 **Uma breve rotina de codigo utilizado no elastic search.**
